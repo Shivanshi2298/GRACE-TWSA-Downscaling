@@ -1,1 +1,4 @@
 # GRACE-TWSA-Downscaling
+In this project, we utilized the Random Forest regression machine learning algorithm to downscale GRACE (Gravity Recovery and Climate Experiment) terrestrial water storage anomaly (TWSA) data from a 1-degree resolution to a finer 0.25-degree resolution. Various hydrological and topographical parameters including canopy water storage, precipitation, soil moisture, surface runoff, evapotranspiration, DEM (Digital Elevation Model), slope, and aspect were incorporated into the model.
+The model encompassed data spanning from April 2002 to June 2017. Initially, the model was trained on coarse-resolution data (1-degree), while high-resolution parameter data (0.25-degree) was employed for predicting the high-resolution GRACE TWSA.
+Additionally, we predicted GRACE TWSA at the 1-degree resolution, which served as a residual. This residual was later added to the final 0.25-degree TWSA to minimize errors in the downscaling process.
